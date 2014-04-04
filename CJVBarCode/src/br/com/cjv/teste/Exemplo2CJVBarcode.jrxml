@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="Exemplo2CJVBarcode"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<import value="br.com.cjv.*" />
+
+
+	<field name="barcode1" class="java.lang.Object">
+		<fieldDescription><![CDATA[new br.com.cjv.CJVBarcode2e5i("23791554100000402743389259700256338300608570")]]></fieldDescription>
+	</field>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="30"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="120"
+						y="7"
+						width="275"
+						height="18"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font/>
+					</textElement>
+				<text><![CDATA[Teste do CJVBarcode]]></text>
+				</staticText>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="500"  isSplitAllowed="true" >
+				<image  scaleImage="RetainShape" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="9"
+						y="37"
+						width="162"
+						height="90"
+						key="image-4"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.awt.Image"><![CDATA[new br.com.cjv.CJVBarcodeEAN13("789500036111",80,2,new int[]{10,10,10,10},true,10,false,new int[]{10,10},new java.awt.Font("Arial", java.awt.Font.PLAIN, 11), java.awt.Color.BLUE ).getImagem()]]></imageExpression>
+				</image>
+				<image  scaleImage="RetainShape" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="9"
+						y="199"
+						width="107"
+						height="90"
+						key="image-5"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.awt.Image"><![CDATA[new br.com.cjv.CJVBarcodeEAN8("7895611",80,2,new int[]{10,10,10,10},true,10,false,new int[]{10,10},new java.awt.Font("Arial", java.awt.Font.PLAIN, 11), java.awt.Color.BLUE ).getImagem()]]></imageExpression>
+				</image>
+				<image  scaleImage="RetainShape" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="9"
+						y="351"
+						width="169"
+						height="90"
+						forecolor="#FFFFFF"
+						backcolor="#FFFFFF"
+						key="image-6"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.awt.Image"><![CDATA[new br.com.cjv.CJVBarcodeUPCA("78950003611",80,2,new int[]{10,10,10,10},true,10,false,new int[]{10,10},new java.awt.Font("Arial", java.awt.Font.PLAIN, 11), java.awt.Color.BLUE ).getImagem()]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement
+						x="198"
+						y="74"
+						width="40"
+						height="17"
+						key="staticText-6"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<text><![CDATA[EAN13]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="198"
+						y="240"
+						width="40"
+						height="17"
+						key="staticText-7"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<text><![CDATA[EAN8]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="198"
+						y="404"
+						width="40"
+						height="17"
+						key="staticText-8"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<text><![CDATA[UPC-A]]></text>
+				</staticText>
+			</band>
+		</summary>
+</jasperReport>
