@@ -12,10 +12,6 @@ import java.awt.image.BufferedImage;
  */
 public class CJVBarcode128 extends AbstractCJVBarcode{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private final String STOP = "PPBBBPPPBPBPP";
 	private final String ASPAS_DUPLAS = (char)34+"";
 	private final String BARRA_INVERTIDA = (char)92+"";
