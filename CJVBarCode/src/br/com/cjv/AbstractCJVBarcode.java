@@ -11,7 +11,8 @@ import java.awt.image.BufferedImage;
 /**
  * Classe abstrata para geração de código de Barras
  * @version 1.000
- * @author Cirilo José Veloso http://www.veloso.adm.br
+ * @author Cirilo José Veloso 
+ * @see http://www.veloso.adm.br
  * @since Maio/2013
  */
 public abstract class AbstractCJVBarcode {
