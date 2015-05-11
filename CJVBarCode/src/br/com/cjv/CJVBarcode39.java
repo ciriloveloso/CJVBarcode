@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 
 /**
  * Gerador de código de barras padrão 3e9
- * @author Cirilo Cirilo José Veloso
+ * @author Cirilo José Veloso
  *
  */
 public class CJVBarcode39 extends AbstractCJVBarcode{
