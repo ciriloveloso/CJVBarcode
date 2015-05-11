@@ -127,8 +127,6 @@ public class CJVBarcode128 extends AbstractCJVBarcode{
 	};
 
 
-	
-
 	public CJVBarcode128(String valor, boolean printLegenda, boolean centralizarLegenda, Tipo128 tipo) {
 		super(valor, printLegenda, centralizarLegenda);
 		this.tipo = tipo;
